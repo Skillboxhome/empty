@@ -2,116 +2,839 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Lagoona - сеть отелей</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lagoona - сеть отелей</title>
 </head>
 
 <body>
 
-	<header class="header">
-		<div class="container">
-			<!-- Left logo of header-->
-			<div class="header__left">
-				<div class="header__logo">
-					<a href="" class="header__logo-left">
-						<img src="/img/logo-header.png" alt="Lagoona - сеть отелей">
-					</a>
-				</div>
-				<!-- Left phone nubmer -->
-				<div class="header__phone">
-					<a href="tel:+74953225448" class="header__phone-link">+ 7 495 322 54 48</a>
-				</div>
-			</div>
-			<!-- Right part of header (account) -->
-			<div class="header__right">
-				<svg class="header__right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="15px"
-					viewbox="0 0 438.533 438.533" xml:space="preserve">
-					<g>
-						<path
-							d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0 c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267 c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407 s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062 C438.533,179.485,428.732,142.795,409.133,109.203z M361.733,232.111l-25.978,25.981l-103.35,103.349 c-3.433,3.43-7.714,5.147-12.852,5.147c-5.137,0-9.419-1.718-12.847-5.147l-25.981-25.98c-3.616-3.607-5.424-7.898-5.424-12.847 c0-4.942,1.809-9.227,5.424-12.847l53.962-53.954H91.363c-4.948,0-9.229-1.813-12.847-5.428c-3.615-3.613-5.424-7.898-5.424-12.847 v-36.547c0-4.948,1.809-9.231,5.424-12.847c3.617-3.617,7.898-5.426,12.847-5.426h143.325l-53.962-53.959 c-3.428-3.428-5.14-7.708-5.14-12.847c0-5.141,1.712-9.42,5.14-12.851l25.981-25.981c3.427-3.425,7.71-5.137,12.847-5.137 c5.145,0,9.419,1.711,12.852,5.137l103.35,103.356l25.978,25.981c3.432,3.427,5.144,7.707,5.144,12.847 C366.877,224.404,365.165,228.686,361.733,232.111z">
-						</path>
-					</g>
-				</svg>
-				<a href="" class="header__right-account">Личный кабинет</a>
-			</div>
-			<!-- Not active navigation part (left) -->
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__list-item">
-						<a href="" class="nav__list-item-link">О нас</a>
-					</li>
-					<li class="nav__list-item">
-						<a href="" class="nav__list-item-link">Услуги</a>
-					</li>
-					<li class="nav__list-item">
-						<a href="" class="nav__list-item-link">Преимущества</a>
-					</li>
-					<li class="nav__list-item">
-						<a href="" class="nav__list-item-link">Размещение</a>
-					</li>
-					<li class="nav__list-item">
-						<a href="" class="nav__list-item-link">Блог</a>
-					</li>
-					<li class="nav__list-item">
-						<a href="" class="nav__list-item-link">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<!-- Active right part (buttoms) -->
-			<section class="active-part">
-				<button type="submit" class="want-tour">Хочу тур</button>
-				<button type="submit" class="btn-back-call">Обратный звонок</button>
-			</section>
-		</div>
-	</header>
+  <header class="header">
+    <div class="container">
+      <!-- Left logo of header-->
+      <div class="header__left">
+        <div class="header__logo">
+          <a href="" class="header__logo-left">
+            <img src="/img/logo-header.png" alt="Lagoona - сеть отелей">
+          </a>
+        </div>
+        <!-- Left phone nubmer -->
+        <div class="header__phone">
+          <a href="tel:+74953225448" class="header__phone-link">+ 7 495 322 54 48</a>
+        </div>
+      </div>
+      <!-- Right part of header (account) -->
+      <div class="header__right">
+        <svg class="header__right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="15px"
+          viewbox="0 0 438.533 438.533" xml:space="preserve">
+          <g>
+            <path
+              d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0 c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267 c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407 s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062 C438.533,179.485,428.732,142.795,409.133,109.203z M361.733,232.111l-25.978,25.981l-103.35,103.349 c-3.433,3.43-7.714,5.147-12.852,5.147c-5.137,0-9.419-1.718-12.847-5.147l-25.981-25.98c-3.616-3.607-5.424-7.898-5.424-12.847 c0-4.942,1.809-9.227,5.424-12.847l53.962-53.954H91.363c-4.948,0-9.229-1.813-12.847-5.428c-3.615-3.613-5.424-7.898-5.424-12.847 v-36.547c0-4.948,1.809-9.231,5.424-12.847c3.617-3.617,7.898-5.426,12.847-5.426h143.325l-53.962-53.959 c-3.428-3.428-5.14-7.708-5.14-12.847c0-5.141,1.712-9.42,5.14-12.851l25.981-25.981c3.427-3.425,7.71-5.137,12.847-5.137 c5.145,0,9.419,1.711,12.852,5.137l103.35,103.356l25.978,25.981c3.432,3.427,5.144,7.707,5.144,12.847 C366.877,224.404,365.165,228.686,361.733,232.111z">
+            </path>
+          </g>
+        </svg>
+        <a href="" class="header__right-account">Личный кабинет</a>
+      </div>
+      <!-- Not active navigation part (left) -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="" class="nav__list-item-link">О нас</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="" class="nav__list-item-link">Услуги</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="" class="nav__list-item-link">Преимущества</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="" class="nav__list-item-link">Размещение</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="" class="nav__list-item-link">Блог</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="" class="nav__list-item-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Active right part (buttoms) -->
+      <section class="active-part">
+        <button type="submit" class="want-tour">Хочу тур</button>
+        <button type="submit" class="btn-back-call">Обратный звонок</button>
+      </section>
+    </div>
+  </header>
 
-	<main>
-		<!-- Special offers -->
-		<section class="special-offers">
-			<div class="container">
-				<h2>Спецпредложения</h2>
-				<ul class="special-offers__list">
-					<!-- Maldive islands -->
-					<li class="special-offers__item">
-						<div class="special-offers__maldive">
-							<h2 сlass="special-offers__maldive-h2">Мальдивские острова</h2>
-							<p сlass="special-offers__maldive-price">от 55 000 р</p>
-							<a href="" class="special-offers__maldive-more-link">
-								Подробнее
-								<svg class="special-offers__more-icon"></svg>
-							</a>
-						</div>
-					</li>
-					<!-- Hot tour Crete island -->
-					<li class="special-offers__item">
-						<div class="special-offers__crete">
-							<h2 сlass="special-offers__crete-h2">Горящий тур на остров Крит</h2>
-							<p сlass="special-offers__crete-price">от 30 000 р</p>
-							<a href="" class="special-offers__crete-more-link">
-								Подробнее
-								<svg class="special-offers__more-icon"></svg>
-							</a>
-						</div>
-					</li>
-					<!-- luxury-suite -->
-					<li class="special-offers__item">
-						<div class="special-offers__luxury-suite">
-							<h2 сlass="special-offers__luxury-suite-h2">Номера категории люкс</h2>
-							<p сlass="special-offers__luxury-suite-price">от 5000 р</p>
-							<a href="" class="special-offers__luxury-suite-more-link">
-								Подробнее
-								<svg class="special-offers__more-icon"></svg>
-							</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-	</main>
+  <main>
+    <!-- Special offers -->
+    <section class="special-offers">
+      <div class="container">
+        <h2>Спецпредложения</h2>
+        <ul class="special-offers__list">
+          <!-- Maldive islands -->
+          <li class="special-offers__item">
+            <div class="special-offers__maldive">
+              <h2 сlass="special-offers__maldive-h2">Мальдивские острова</h2>
+              <p сlass="special-offers__maldive-price">от 55 000 р</p>
+              <a href="" class="special-offers__maldive-more-link">
+                Подробнее
+                <svg class="more-icon"></svg>
+              </a>
+            </div>
+          </li>
+          <!-- Hot tour Crete island -->
+          <li class="special-offers__item">
+            <div class="special-offers__crete">
+              <h2 сlass="special-offers__crete-h2">Горящий тур на остров Крит</h2>
+              <p сlass="special-offers__crete-price">от 30 000 р</p>
+              <a href="" class="special-offers__crete-more-link">
+                Подробнее
+                <svg class="more-icon"></svg>
+              </a>
+            </div>
+          </li>
+          <!-- luxury-suite -->
+          <li class="special-offers__item">
+            <div class="special-offers__luxury-suite">
+              <h2 сlass="special-offers__luxury-suite-h2">Номера категории люкс</h2>
+              <p сlass="special-offers__luxury-suite-price">от 5000 р</p>
+              <a href="" class="special-offers__luxury-suite-more-link">
+                Подробнее
+                <svg class="more-icon"></svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- about us -->
+    <section class="about-us">
+      <div class="container">
+        <h2 class="about-us__h2">О нас</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ad velit mollitia consequuntur, unde illo
+          nihil animi sint! Non perferendis porro, voluptatibus numquam mollitia minus nostrum magnam quos eveniet
+          aliquid.
+          Quis excepturi at ipsa distinctio quod tempore harum quos, fugit unde necessitatibus, quo voluptatibus est
+          cupiditate. Suscipit optio, at corrupti reiciendis, a aliquam quas provident dolorem nisi sapiente blanditiis
+          numquam.
+          Suscipit corporis fugiat quo ratione neque a, blanditiis commodi voluptatum doloribus minus placeat, nobis
+          debitis. Quaerat repudiandae incidunt hic obcaecati libero, vitae veritatis dicta sequi nulla nisi fugit minus
+          qui!
+          Reiciendis aperiam, numquam dolorem beatae distinctio doloribus impedit vel laboriosam quibusdam ratione ipsam
+          ut repellendus recusandae ab id ipsa molestias molestiae tenetur cum. Perferendis beatae sit voluptatem
+          aliquam voluptatum maiores?</p>
+      </div>
+    </section>
+    <!-- services -->
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title">Услуги</h2>
+        <ul class="services__list">
+          <!-- luxury -->
+          <li class="services__item">
+            <div class="services__list-item">
+              <a href="" class="services__link">
+                <img src="./img/luxury-service.png" alt="luxury-service">
+                <h4 class="services__item-title">Эксклюзивные услуги</h4>
+                <svg class="more-icon"></svg>
+              </a>
+              <p class="services__paragraph">
+                Равным образом постоянный количественный рост
+                <br>
+                <br>
+                и сфера нашей активности
+              </p>
+            </div>
+          </li>
+          <!-- hall rent -->
+          <li class="services__item">
+            <div class="services__list-item">
+              <a href="" class="services__link">
+                <img src="./img/banquet-hall-rent.png" alt="Banquet-hall-rental">
+                <h4 class="services__item-title">Аренда банкетных залов</h4>
+                <svg class="more-icon"></svg>
+              </a>
+              <p class="services__paragraph">
+                Значимость этих проблем настолько очевидна, что
+                <br>
+                <br>
+                дальнейшее развитие различных форм
+              </p>
+            </div>
+          </li>
+          <!-- swimming pools -->
+          <li class="services__item">
+            <div class="services__list-item">
+              <a href="" class="services__link">
+                <img src="./img/swimming pools.png" alt="swimming-pools">
+                <h4 class="services__item-title">Сауны, бассейны, бани, фитнес-залы</h4>
+                <svg class="more-icon"></svg>
+              </a>
+              <p class="services__paragraph">
+                Не следует, однако, забывать, что начало
+                <br>
+                <br>
+                повседневной работы по формированию позиции
+              </p>
+            </div>
+          </li>
+          <!-- guarded parking -->
+          <li class="services__item">
+            <div class="services__list-item">
+              <a href="" class="services__link">
+                <img src="./img/guarded parking.png" alt="guarded-parking">
+                <h4 class="services__item-title">Охраняемые автомобильные стоянки</h4>
+                <svg class="more-icon"></svg>
+              </a>
+              <p class="services__paragraph">
+                Не следует, однако, забывать, что начало
+                <br>
+                <br>
+                повседневной работы по формированию позиции
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- adventages -->
+    <section class="advantages">
+      <div class="container">
+        <h2>Преимущества</h2>
+        <ul class="adventages__list">
+          <!-- bathroom -->
+          <li class="adventages__item">
+            <div class="adventages__list-item">
+              <svg class="bathroom-icon" height="59" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #2D527C;
+                  }
+
+                  .st1 {
+                    fill: #CEE8FA;
+                  }
+
+                  .st2 {
+                    fill: #F0BF5F;
+                  }
+                </style>
+                <g>
+                  <path class="st0"
+                    d="M303.6,453.1H162.3c-71.3,0-129.3-58-129.3-129.3V201.2c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v122.7c0,55.4,45,100.4,100.4,100.4h141.3c8,0,14.4,6.5,14.4,14.4C318,446.7,311.6,453.1,303.6,453.1z">
+                  </path>
+                  <path class="st0"
+                    d="M387.7,446.7c-6,0-11.5-3.7-13.6-9.7c-2.6-7.5,1.3-15.7,8.8-18.4c40.2-14.1,67.2-52.2,67.2-94.8v-14.5c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v14.5c0,54.8-34.7,103.9-86.5,122C390.9,446.4,389.3,446.7,387.7,446.7z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M468.7,248.8H43.3c-15.9,0-28.8-12.9-28.8-28.8l0,0c0-15.9,12.9-28.8,28.8-28.8h425.5c15.9,0,28.8,12.9,28.8,28.8l0,0C497.6,235.9,484.7,248.8,468.7,248.8z">
+                </path>
+                <path class="st0"
+                  d="M468.7,263.2H43.3C19.4,263.2,0,243.8,0,219.9s19.4-43.3,43.3-43.3h425.5c23.9,0,43.3,19.4,43.3,43.3S492.6,263.2,468.7,263.2z M43.3,205.5c-8,0-14.4,6.5-14.4,14.4s6.5,14.4,14.4,14.4h425.5c8,0,14.4-6.5,14.4-14.4s-6.5-14.4-14.4-14.4H43.3z">
+                </path>
+                <circle class="st1" cx="113.9" cy="455" r="25.2"></circle>
+                <path class="st0"
+                  d="M113.9,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S135.8,494.7,113.9,494.7z M113.9,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S119.9,444.2,113.9,444.2z">
+                </path>
+                <circle class="st1" cx="398.1" cy="455" r="25.2"></circle>
+                <g>
+                  <path class="st0"
+                    d="M398.1,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S419.9,494.7,398.1,494.7z M398.1,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S404,444.2,398.1,444.2z">
+                  </path>
+                  <path class="st2"
+                    d="M323.4,88.7H188.6c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h134.9c8,0,14.4,6.5,14.4,14.4 S331.4,88.7,323.4,88.7z">
+                  </path>
+                  <path class="st2"
+                    d="M328.1,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C342.5,110.4,336.1,116.8,328.1,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M354.1,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S362,46.2,354.1,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M183.9,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C198.3,110.4,191.9,116.8,183.9,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M209.8,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S217.8,46.2,209.8,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M256,150c-8,0-14.4-6.5-14.4-14.4V75.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v59.9 C270.4,143.5,264,150,256,150z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M195.7,334.8H118c-9.8,0-17.8-8-17.8-17.8v-126h113.2v126C213.4,326.9,205.5,334.8,195.7,334.8z">
+                </path>
+                <path class="st0"
+                  d="M195.7,349.3H118c-17.7,0-32.2-14.4-32.2-32.2v-126c0-8,6.5-14.4,14.4-14.4h113.2c8,0,14.4,6.5,14.4,14.4v126 C227.9,334.8,213.4,349.3,195.7,349.3z M114.7,205.5v111.6c0,1.8,1.5,3.3,3.3,3.3h77.7c1.8,0,3.3-1.5,3.3-3.3V205.5H114.7 L114.7,205.5z">
+                </path>
+              </svg>
+              <p class="adventages__paragraph">
+                <br>
+                Идейные соображения высшего
+                <br>
+                порядка, а также постоянный
+                <br>
+                количественный рост
+              </p>
+            </div>
+          </li>
+          <!--hanger -->
+          <li class="adventages__item">
+            <div class="adventages__list-item">
+              <svg class="hanger-icon" height="59" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #2D527C;
+                  }
+
+                  .st1 {
+                    fill: #CEE8FA;
+                  }
+
+                  .st2 {
+                    fill: #F0BF5F;
+                  }
+                </style>
+                <g>
+                  <path class="st0"
+                    d="M303.6,453.1H162.3c-71.3,0-129.3-58-129.3-129.3V201.2c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v122.7c0,55.4,45,100.4,100.4,100.4h141.3c8,0,14.4,6.5,14.4,14.4C318,446.7,311.6,453.1,303.6,453.1z">
+                  </path>
+                  <path class="st0"
+                    d="M387.7,446.7c-6,0-11.5-3.7-13.6-9.7c-2.6-7.5,1.3-15.7,8.8-18.4c40.2-14.1,67.2-52.2,67.2-94.8v-14.5c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v14.5c0,54.8-34.7,103.9-86.5,122C390.9,446.4,389.3,446.7,387.7,446.7z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M468.7,248.8H43.3c-15.9,0-28.8-12.9-28.8-28.8l0,0c0-15.9,12.9-28.8,28.8-28.8h425.5c15.9,0,28.8,12.9,28.8,28.8l0,0C497.6,235.9,484.7,248.8,468.7,248.8z">
+                </path>
+                <path class="st0"
+                  d="M468.7,263.2H43.3C19.4,263.2,0,243.8,0,219.9s19.4-43.3,43.3-43.3h425.5c23.9,0,43.3,19.4,43.3,43.3S492.6,263.2,468.7,263.2z M43.3,205.5c-8,0-14.4,6.5-14.4,14.4s6.5,14.4,14.4,14.4h425.5c8,0,14.4-6.5,14.4-14.4s-6.5-14.4-14.4-14.4H43.3z">
+                </path>
+                <circle class="st1" cx="113.9" cy="455" r="25.2"></circle>
+                <path class="st0"
+                  d="M113.9,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S135.8,494.7,113.9,494.7z M113.9,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S119.9,444.2,113.9,444.2z">
+                </path>
+                <circle class="st1" cx="398.1" cy="455" r="25.2"></circle>
+                <g>
+                  <path class="st0"
+                    d="M398.1,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S419.9,494.7,398.1,494.7z M398.1,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S404,444.2,398.1,444.2z">
+                  </path>
+                  <path class="st2"
+                    d="M323.4,88.7H188.6c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h134.9c8,0,14.4,6.5,14.4,14.4 S331.4,88.7,323.4,88.7z">
+                  </path>
+                  <path class="st2"
+                    d="M328.1,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C342.5,110.4,336.1,116.8,328.1,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M354.1,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S362,46.2,354.1,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M183.9,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C198.3,110.4,191.9,116.8,183.9,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M209.8,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S217.8,46.2,209.8,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M256,150c-8,0-14.4-6.5-14.4-14.4V75.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v59.9 C270.4,143.5,264,150,256,150z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M195.7,334.8H118c-9.8,0-17.8-8-17.8-17.8v-126h113.2v126C213.4,326.9,205.5,334.8,195.7,334.8z">
+                </path>
+                <path class="st0"
+                  d="M195.7,349.3H118c-17.7,0-32.2-14.4-32.2-32.2v-126c0-8,6.5-14.4,14.4-14.4h113.2c8,0,14.4,6.5,14.4,14.4v126 C227.9,334.8,213.4,349.3,195.7,349.3z M114.7,205.5v111.6c0,1.8,1.5,3.3,3.3,3.3h77.7c1.8,0,3.3-1.5,3.3-3.3V205.5H114.7 L114.7,205.5z">
+                </path>
+              </svg>
+              <p class="adventages__paragraph">
+                <br>
+                Идейные соображения высшего
+                <br>
+                порядка, а также постоянный
+                <br>
+                количественный рост
+              </p>
+            </div>
+          </li>
+          <!-- radiator -->
+          <li class="adventages__item">
+            <div class="adventages__list-item">
+              <svg class="radiator-icon" height="59" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #2D527C;
+                  }
+
+                  .st1 {
+                    fill: #CEE8FA;
+                  }
+
+                  .st2 {
+                    fill: #F0BF5F;
+                  }
+                </style>
+                <g>
+                  <path class="st0"
+                    d="M303.6,453.1H162.3c-71.3,0-129.3-58-129.3-129.3V201.2c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v122.7c0,55.4,45,100.4,100.4,100.4h141.3c8,0,14.4,6.5,14.4,14.4C318,446.7,311.6,453.1,303.6,453.1z">
+                  </path>
+                  <path class="st0"
+                    d="M387.7,446.7c-6,0-11.5-3.7-13.6-9.7c-2.6-7.5,1.3-15.7,8.8-18.4c40.2-14.1,67.2-52.2,67.2-94.8v-14.5c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v14.5c0,54.8-34.7,103.9-86.5,122C390.9,446.4,389.3,446.7,387.7,446.7z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M468.7,248.8H43.3c-15.9,0-28.8-12.9-28.8-28.8l0,0c0-15.9,12.9-28.8,28.8-28.8h425.5c15.9,0,28.8,12.9,28.8,28.8l0,0C497.6,235.9,484.7,248.8,468.7,248.8z">
+                </path>
+                <path class="st0"
+                  d="M468.7,263.2H43.3C19.4,263.2,0,243.8,0,219.9s19.4-43.3,43.3-43.3h425.5c23.9,0,43.3,19.4,43.3,43.3S492.6,263.2,468.7,263.2z M43.3,205.5c-8,0-14.4,6.5-14.4,14.4s6.5,14.4,14.4,14.4h425.5c8,0,14.4-6.5,14.4-14.4s-6.5-14.4-14.4-14.4H43.3z">
+                </path>
+                <circle class="st1" cx="113.9" cy="455" r="25.2"></circle>
+                <path class="st0"
+                  d="M113.9,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S135.8,494.7,113.9,494.7z M113.9,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S119.9,444.2,113.9,444.2z">
+                </path>
+                <circle class="st1" cx="398.1" cy="455" r="25.2"></circle>
+                <g>
+                  <path class="st0"
+                    d="M398.1,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S419.9,494.7,398.1,494.7z M398.1,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S404,444.2,398.1,444.2z">
+                  </path>
+                  <path class="st2"
+                    d="M323.4,88.7H188.6c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h134.9c8,0,14.4,6.5,14.4,14.4 S331.4,88.7,323.4,88.7z">
+                  </path>
+                  <path class="st2"
+                    d="M328.1,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C342.5,110.4,336.1,116.8,328.1,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M354.1,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S362,46.2,354.1,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M183.9,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C198.3,110.4,191.9,116.8,183.9,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M209.8,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S217.8,46.2,209.8,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M256,150c-8,0-14.4-6.5-14.4-14.4V75.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v59.9 C270.4,143.5,264,150,256,150z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M195.7,334.8H118c-9.8,0-17.8-8-17.8-17.8v-126h113.2v126C213.4,326.9,205.5,334.8,195.7,334.8z">
+                </path>
+                <path class="st0"
+                  d="M195.7,349.3H118c-17.7,0-32.2-14.4-32.2-32.2v-126c0-8,6.5-14.4,14.4-14.4h113.2c8,0,14.4,6.5,14.4,14.4v126 C227.9,334.8,213.4,349.3,195.7,349.3z M114.7,205.5v111.6c0,1.8,1.5,3.3,3.3,3.3h77.7c1.8,0,3.3-1.5,3.3-3.3V205.5H114.7 L114.7,205.5z">
+                </path>
+              </svg>
+              <p class="adventages__paragraph">
+                <br>
+                Идейные соображения высшего
+                <br>
+                порядка, а также постоянный
+                <br>
+                количественный рост
+              </p>
+            </div>
+          </li>
+          <!-- label -->
+          <li class="adventages__item">
+            <div class="adventages__list-item">
+              <svg class="label-icon" height="59" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #2D527C;
+                  }
+
+                  .st1 {
+                    fill: #CEE8FA;
+                  }
+
+                  .st2 {
+                    fill: #F0BF5F;
+                  }
+                </style>
+                <g>
+                  <path class="st0"
+                    d="M303.6,453.1H162.3c-71.3,0-129.3-58-129.3-129.3V201.2c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v122.7c0,55.4,45,100.4,100.4,100.4h141.3c8,0,14.4,6.5,14.4,14.4C318,446.7,311.6,453.1,303.6,453.1z">
+                  </path>
+                  <path class="st0"
+                    d="M387.7,446.7c-6,0-11.5-3.7-13.6-9.7c-2.6-7.5,1.3-15.7,8.8-18.4c40.2-14.1,67.2-52.2,67.2-94.8v-14.5c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v14.5c0,54.8-34.7,103.9-86.5,122C390.9,446.4,389.3,446.7,387.7,446.7z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M468.7,248.8H43.3c-15.9,0-28.8-12.9-28.8-28.8l0,0c0-15.9,12.9-28.8,28.8-28.8h425.5c15.9,0,28.8,12.9,28.8,28.8l0,0C497.6,235.9,484.7,248.8,468.7,248.8z">
+                </path>
+                <path class="st0"
+                  d="M468.7,263.2H43.3C19.4,263.2,0,243.8,0,219.9s19.4-43.3,43.3-43.3h425.5c23.9,0,43.3,19.4,43.3,43.3S492.6,263.2,468.7,263.2z M43.3,205.5c-8,0-14.4,6.5-14.4,14.4s6.5,14.4,14.4,14.4h425.5c8,0,14.4-6.5,14.4-14.4s-6.5-14.4-14.4-14.4H43.3z">
+                </path>
+                <circle class="st1" cx="113.9" cy="455" r="25.2"></circle>
+                <path class="st0"
+                  d="M113.9,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S135.8,494.7,113.9,494.7z M113.9,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S119.9,444.2,113.9,444.2z">
+                </path>
+                <circle class="st1" cx="398.1" cy="455" r="25.2"></circle>
+                <g>
+                  <path class="st0"
+                    d="M398.1,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S419.9,494.7,398.1,494.7z M398.1,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S404,444.2,398.1,444.2z">
+                  </path>
+                  <path class="st2"
+                    d="M323.4,88.7H188.6c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h134.9c8,0,14.4,6.5,14.4,14.4 S331.4,88.7,323.4,88.7z">
+                  </path>
+                  <path class="st2"
+                    d="M328.1,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C342.5,110.4,336.1,116.8,328.1,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M354.1,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S362,46.2,354.1,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M183.9,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C198.3,110.4,191.9,116.8,183.9,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M209.8,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S217.8,46.2,209.8,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M256,150c-8,0-14.4-6.5-14.4-14.4V75.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v59.9 C270.4,143.5,264,150,256,150z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M195.7,334.8H118c-9.8,0-17.8-8-17.8-17.8v-126h113.2v126C213.4,326.9,205.5,334.8,195.7,334.8z">
+                </path>
+                <path class="st0"
+                  d="M195.7,349.3H118c-17.7,0-32.2-14.4-32.2-32.2v-126c0-8,6.5-14.4,14.4-14.4h113.2c8,0,14.4,6.5,14.4,14.4v126 C227.9,334.8,213.4,349.3,195.7,349.3z M114.7,205.5v111.6c0,1.8,1.5,3.3,3.3,3.3h77.7c1.8,0,3.3-1.5,3.3-3.3V205.5H114.7 L114.7,205.5z">
+                </path>
+              </svg>
+              <p class="adventages__paragraph">
+                <br>
+                Идейные соображения высшего
+                <br>
+                порядка, а также постоянный
+                <br>
+                количественный рост
+              </p>
+            </div>
+          </li>
+          <!-- car -->
+          <li class="adventages__item">
+            <div class="adventages__list-item">
+              <svg class="car-icon" height="59" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #2D527C;
+                  }
+
+                  .st1 {
+                    fill: #CEE8FA;
+                  }
+
+                  .st2 {
+                    fill: #F0BF5F;
+                  }
+                </style>
+                <g>
+                  <path class="st0"
+                    d="M303.6,453.1H162.3c-71.3,0-129.3-58-129.3-129.3V201.2c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v122.7c0,55.4,45,100.4,100.4,100.4h141.3c8,0,14.4,6.5,14.4,14.4C318,446.7,311.6,453.1,303.6,453.1z">
+                  </path>
+                  <path class="st0"
+                    d="M387.7,446.7c-6,0-11.5-3.7-13.6-9.7c-2.6-7.5,1.3-15.7,8.8-18.4c40.2-14.1,67.2-52.2,67.2-94.8v-14.5c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v14.5c0,54.8-34.7,103.9-86.5,122C390.9,446.4,389.3,446.7,387.7,446.7z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M468.7,248.8H43.3c-15.9,0-28.8-12.9-28.8-28.8l0,0c0-15.9,12.9-28.8,28.8-28.8h425.5c15.9,0,28.8,12.9,28.8,28.8l0,0C497.6,235.9,484.7,248.8,468.7,248.8z">
+                </path>
+                <path class="st0"
+                  d="M468.7,263.2H43.3C19.4,263.2,0,243.8,0,219.9s19.4-43.3,43.3-43.3h425.5c23.9,0,43.3,19.4,43.3,43.3S492.6,263.2,468.7,263.2z M43.3,205.5c-8,0-14.4,6.5-14.4,14.4s6.5,14.4,14.4,14.4h425.5c8,0,14.4-6.5,14.4-14.4s-6.5-14.4-14.4-14.4H43.3z">
+                </path>
+                <circle class="st1" cx="113.9" cy="455" r="25.2"></circle>
+                <path class="st0"
+                  d="M113.9,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S135.8,494.7,113.9,494.7z M113.9,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S119.9,444.2,113.9,444.2z">
+                </path>
+                <circle class="st1" cx="398.1" cy="455" r="25.2"></circle>
+                <g>
+                  <path class="st0"
+                    d="M398.1,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S419.9,494.7,398.1,494.7z M398.1,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S404,444.2,398.1,444.2z">
+                  </path>
+                  <path class="st2"
+                    d="M323.4,88.7H188.6c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h134.9c8,0,14.4,6.5,14.4,14.4 S331.4,88.7,323.4,88.7z">
+                  </path>
+                  <path class="st2"
+                    d="M328.1,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C342.5,110.4,336.1,116.8,328.1,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M354.1,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S362,46.2,354.1,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M183.9,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C198.3,110.4,191.9,116.8,183.9,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M209.8,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S217.8,46.2,209.8,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M256,150c-8,0-14.4-6.5-14.4-14.4V75.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v59.9 C270.4,143.5,264,150,256,150z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M195.7,334.8H118c-9.8,0-17.8-8-17.8-17.8v-126h113.2v126C213.4,326.9,205.5,334.8,195.7,334.8z">
+                </path>
+                <path class="st0"
+                  d="M195.7,349.3H118c-17.7,0-32.2-14.4-32.2-32.2v-126c0-8,6.5-14.4,14.4-14.4h113.2c8,0,14.4,6.5,14.4,14.4v126 C227.9,334.8,213.4,349.3,195.7,349.3z M114.7,205.5v111.6c0,1.8,1.5,3.3,3.3,3.3h77.7c1.8,0,3.3-1.5,3.3-3.3V205.5H114.7 L114.7,205.5z">
+                </path>
+              </svg>
+              <p class="adventages__paragraph">
+                <br>
+                Идейные соображения высшего
+                <br>
+                порядка, а также постоянный
+                <br>
+                количественный рост
+              </p>
+            </div>
+          </li>
+          <!-- tray -->
+          <li class="adventages__item">
+            <div class="adventages__list-item">
+              <svg class="tray-icon" height="59" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #2D527C;
+                  }
+
+                  .st1 {
+                    fill: #CEE8FA;
+                  }
+
+                  .st2 {
+                    fill: #F0BF5F;
+                  }
+                </style>
+                <g>
+                  <path class="st0"
+                    d="M303.6,453.1H162.3c-71.3,0-129.3-58-129.3-129.3V201.2c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v122.7c0,55.4,45,100.4,100.4,100.4h141.3c8,0,14.4,6.5,14.4,14.4C318,446.7,311.6,453.1,303.6,453.1z">
+                  </path>
+                  <path class="st0"
+                    d="M387.7,446.7c-6,0-11.5-3.7-13.6-9.7c-2.6-7.5,1.3-15.7,8.8-18.4c40.2-14.1,67.2-52.2,67.2-94.8v-14.5c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v14.5c0,54.8-34.7,103.9-86.5,122C390.9,446.4,389.3,446.7,387.7,446.7z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M468.7,248.8H43.3c-15.9,0-28.8-12.9-28.8-28.8l0,0c0-15.9,12.9-28.8,28.8-28.8h425.5c15.9,0,28.8,12.9,28.8,28.8l0,0C497.6,235.9,484.7,248.8,468.7,248.8z">
+                </path>
+                <path class="st0"
+                  d="M468.7,263.2H43.3C19.4,263.2,0,243.8,0,219.9s19.4-43.3,43.3-43.3h425.5c23.9,0,43.3,19.4,43.3,43.3S492.6,263.2,468.7,263.2z M43.3,205.5c-8,0-14.4,6.5-14.4,14.4s6.5,14.4,14.4,14.4h425.5c8,0,14.4-6.5,14.4-14.4s-6.5-14.4-14.4-14.4H43.3z">
+                </path>
+                <circle class="st1" cx="113.9" cy="455" r="25.2"></circle>
+                <path class="st0"
+                  d="M113.9,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S135.8,494.7,113.9,494.7z M113.9,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S119.9,444.2,113.9,444.2z">
+                </path>
+                <circle class="st1" cx="398.1" cy="455" r="25.2"></circle>
+                <g>
+                  <path class="st0"
+                    d="M398.1,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S419.9,494.7,398.1,494.7z M398.1,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S404,444.2,398.1,444.2z">
+                  </path>
+                  <path class="st2"
+                    d="M323.4,88.7H188.6c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h134.9c8,0,14.4,6.5,14.4,14.4 S331.4,88.7,323.4,88.7z">
+                  </path>
+                  <path class="st2"
+                    d="M328.1,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C342.5,110.4,336.1,116.8,328.1,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M354.1,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S362,46.2,354.1,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M183.9,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C198.3,110.4,191.9,116.8,183.9,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M209.8,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S217.8,46.2,209.8,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M256,150c-8,0-14.4-6.5-14.4-14.4V75.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v59.9 C270.4,143.5,264,150,256,150z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M195.7,334.8H118c-9.8,0-17.8-8-17.8-17.8v-126h113.2v126C213.4,326.9,205.5,334.8,195.7,334.8z">
+                </path>
+                <path class="st0"
+                  d="M195.7,349.3H118c-17.7,0-32.2-14.4-32.2-32.2v-126c0-8,6.5-14.4,14.4-14.4h113.2c8,0,14.4,6.5,14.4,14.4v126 C227.9,334.8,213.4,349.3,195.7,349.3z M114.7,205.5v111.6c0,1.8,1.5,3.3,3.3,3.3h77.7c1.8,0,3.3-1.5,3.3-3.3V205.5H114.7 L114.7,205.5z">
+                </path>
+              </svg>
+              <p class="adventages__paragraph">
+                <br>
+                Идейные соображения высшего
+                <br>
+                порядка, а также постоянный
+                <br>
+                количественный рост
+              </p>
+            </div>
+          </li>
+          <!-- safe -->
+          <li class="adventages__item">
+            <div class="adventages__list-item">
+              <svg class="safe-icon" height="59" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #2D527C;
+                  }
+
+                  .st1 {
+                    fill: #CEE8FA;
+                  }
+
+                  .st2 {
+                    fill: #F0BF5F;
+                  }
+                </style>
+                <g>
+                  <path class="st0"
+                    d="M303.6,453.1H162.3c-71.3,0-129.3-58-129.3-129.3V201.2c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v122.7c0,55.4,45,100.4,100.4,100.4h141.3c8,0,14.4,6.5,14.4,14.4C318,446.7,311.6,453.1,303.6,453.1z">
+                  </path>
+                  <path class="st0"
+                    d="M387.7,446.7c-6,0-11.5-3.7-13.6-9.7c-2.6-7.5,1.3-15.7,8.8-18.4c40.2-14.1,67.2-52.2,67.2-94.8v-14.5c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v14.5c0,54.8-34.7,103.9-86.5,122C390.9,446.4,389.3,446.7,387.7,446.7z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M468.7,248.8H43.3c-15.9,0-28.8-12.9-28.8-28.8l0,0c0-15.9,12.9-28.8,28.8-28.8h425.5c15.9,0,28.8,12.9,28.8,28.8l0,0C497.6,235.9,484.7,248.8,468.7,248.8z">
+                </path>
+                <path class="st0"
+                  d="M468.7,263.2H43.3C19.4,263.2,0,243.8,0,219.9s19.4-43.3,43.3-43.3h425.5c23.9,0,43.3,19.4,43.3,43.3S492.6,263.2,468.7,263.2z M43.3,205.5c-8,0-14.4,6.5-14.4,14.4s6.5,14.4,14.4,14.4h425.5c8,0,14.4-6.5,14.4-14.4s-6.5-14.4-14.4-14.4H43.3z">
+                </path>
+                <circle class="st1" cx="113.9" cy="455" r="25.2"></circle>
+                <path class="st0"
+                  d="M113.9,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S135.8,494.7,113.9,494.7z M113.9,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S119.9,444.2,113.9,444.2z">
+                </path>
+                <circle class="st1" cx="398.1" cy="455" r="25.2"></circle>
+                <g>
+                  <path class="st0"
+                    d="M398.1,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S419.9,494.7,398.1,494.7z M398.1,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S404,444.2,398.1,444.2z">
+                  </path>
+                  <path class="st2"
+                    d="M323.4,88.7H188.6c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h134.9c8,0,14.4,6.5,14.4,14.4 S331.4,88.7,323.4,88.7z">
+                  </path>
+                  <path class="st2"
+                    d="M328.1,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C342.5,110.4,336.1,116.8,328.1,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M354.1,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S362,46.2,354.1,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M183.9,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C198.3,110.4,191.9,116.8,183.9,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M209.8,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S217.8,46.2,209.8,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M256,150c-8,0-14.4-6.5-14.4-14.4V75.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v59.9 C270.4,143.5,264,150,256,150z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M195.7,334.8H118c-9.8,0-17.8-8-17.8-17.8v-126h113.2v126C213.4,326.9,205.5,334.8,195.7,334.8z">
+                </path>
+                <path class="st0"
+                  d="M195.7,349.3H118c-17.7,0-32.2-14.4-32.2-32.2v-126c0-8,6.5-14.4,14.4-14.4h113.2c8,0,14.4,6.5,14.4,14.4v126 C227.9,334.8,213.4,349.3,195.7,349.3z M114.7,205.5v111.6c0,1.8,1.5,3.3,3.3,3.3h77.7c1.8,0,3.3-1.5,3.3-3.3V205.5H114.7 L114.7,205.5z">
+                </path>
+              </svg>
+              <p class="adventages__paragraph">
+                <br>
+                Идейные соображения высшего
+                <br>
+                порядка, а также постоянный
+                <br>
+                количественный рост
+              </p>
+            </div>
+          </li>
+          <!-- swimming -->
+          <li class="adventages__item">
+            <div class="adventages__list-item">
+              <svg class="swimming-icon" height="59" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #2D527C;
+                  }
+
+                  .st1 {
+                    fill: #CEE8FA;
+                  }
+
+                  .st2 {
+                    fill: #F0BF5F;
+                  }
+                </style>
+                <g>
+                  <path class="st0"
+                    d="M303.6,453.1H162.3c-71.3,0-129.3-58-129.3-129.3V201.2c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v122.7c0,55.4,45,100.4,100.4,100.4h141.3c8,0,14.4,6.5,14.4,14.4C318,446.7,311.6,453.1,303.6,453.1z">
+                  </path>
+                  <path class="st0"
+                    d="M387.7,446.7c-6,0-11.5-3.7-13.6-9.7c-2.6-7.5,1.3-15.7,8.8-18.4c40.2-14.1,67.2-52.2,67.2-94.8v-14.5c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v14.5c0,54.8-34.7,103.9-86.5,122C390.9,446.4,389.3,446.7,387.7,446.7z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M468.7,248.8H43.3c-15.9,0-28.8-12.9-28.8-28.8l0,0c0-15.9,12.9-28.8,28.8-28.8h425.5c15.9,0,28.8,12.9,28.8,28.8l0,0C497.6,235.9,484.7,248.8,468.7,248.8z">
+                </path>
+                <path class="st0"
+                  d="M468.7,263.2H43.3C19.4,263.2,0,243.8,0,219.9s19.4-43.3,43.3-43.3h425.5c23.9,0,43.3,19.4,43.3,43.3S492.6,263.2,468.7,263.2z M43.3,205.5c-8,0-14.4,6.5-14.4,14.4s6.5,14.4,14.4,14.4h425.5c8,0,14.4-6.5,14.4-14.4s-6.5-14.4-14.4-14.4H43.3z">
+                </path>
+                <circle class="st1" cx="113.9" cy="455" r="25.2"></circle>
+                <path class="st0"
+                  d="M113.9,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S135.8,494.7,113.9,494.7z M113.9,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S119.9,444.2,113.9,444.2z">
+                </path>
+                <circle class="st1" cx="398.1" cy="455" r="25.2"></circle>
+                <g>
+                  <path class="st0"
+                    d="M398.1,494.7c-21.9,0-39.7-17.8-39.7-39.7s17.8-39.7,39.7-39.7s39.7,17.8,39.7,39.7S419.9,494.7,398.1,494.7z M398.1,444.2c-6,0-10.8,4.9-10.8,10.8s4.9,10.8,10.8,10.8s10.8-4.9,10.8-10.8S404,444.2,398.1,444.2z">
+                  </path>
+                  <path class="st2"
+                    d="M323.4,88.7H188.6c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h134.9c8,0,14.4,6.5,14.4,14.4 S331.4,88.7,323.4,88.7z">
+                  </path>
+                  <path class="st2"
+                    d="M328.1,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C342.5,110.4,336.1,116.8,328.1,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M354.1,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S362,46.2,354.1,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M183.9,116.8c-8,0-14.4-6.5-14.4-14.4V31.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v70.7 C198.3,110.4,191.9,116.8,183.9,116.8z">
+                  </path>
+                  <path class="st2"
+                    d="M209.8,46.2h-51.9c-8,0-14.4-6.5-14.4-14.4s6.5-14.4,14.4-14.4h51.9c8,0,14.4,6.5,14.4,14.4 S217.8,46.2,209.8,46.2z">
+                  </path>
+                  <path class="st2"
+                    d="M256,150c-8,0-14.4-6.5-14.4-14.4V75.7c0-8,6.5-14.4,14.4-14.4s14.4,6.5,14.4,14.4v59.9 C270.4,143.5,264,150,256,150z">
+                  </path>
+                </g>
+                <path class="st1"
+                  d="M195.7,334.8H118c-9.8,0-17.8-8-17.8-17.8v-126h113.2v126C213.4,326.9,205.5,334.8,195.7,334.8z">
+                </path>
+                <path class="st0"
+                  d="M195.7,349.3H118c-17.7,0-32.2-14.4-32.2-32.2v-126c0-8,6.5-14.4,14.4-14.4h113.2c8,0,14.4,6.5,14.4,14.4v126 C227.9,334.8,213.4,349.3,195.7,349.3z M114.7,205.5v111.6c0,1.8,1.5,3.3,3.3,3.3h77.7c1.8,0,3.3-1.5,3.3-3.3V205.5H114.7 L114.7,205.5z">
+                </path>
+              </svg>
+              <p class="adventages__paragraph">
+                <br>
+                Идейные соображения высшего
+                <br>
+                порядка, а также постоянный
+                <br>
+                количественный рост
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
 
 </body>
 
