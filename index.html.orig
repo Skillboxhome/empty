@@ -76,7 +76,7 @@
 <<<<<<< HEAD
         <h2>Super Sale for VIP clients</h2>
 =======
-        <h2>Супер предложения для клиентов</h2>
+        <h2>Special offers for new clients</h2>
 >>>>>>> new-branch
         <ul class="special-offers__list">
           <!-- Maldive islands -->
